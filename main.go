@@ -15,7 +15,7 @@ type Product struct {
 	Id                            int `json:"id"`
 	Name                          string
 	Url                           string
-	Contact                       string
+	DataProtectionOfficerContact  string
 	PrivacyPages                  []string `json:"privacy_pages"`
 	SecurityPages                 []string `json:"security_pages"`
 	ProductPage                   string
