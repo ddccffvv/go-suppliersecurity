@@ -54,9 +54,9 @@ type Product struct {
 	SecurityPages                 []string // list of discovered pages containing information about the security policy and program
 	ProductPage                   string // product page on suppliersecurity.info
 	HipaaCertified                bool // is this product hipaa certified (false or nil means "not detected")
-	Iso27001Certified             bool // is this product iso 27001 certified
-	Soc2Type1Certified            bool // is this product soc 2 type 1 certified
-	Soc2Type2Certified            bool // is this product soc 2 type 2 certified
+	Iso27001Certified             bool // is this product iso 27001 certified (false or nil means "not detected")
+	Soc2Type1Certified            bool // is this product soc 2 type 1 certified (false or nil means "not detected")
+	Soc2Type2Certified            bool // is this product soc 2 type 2 certified (false or nil means "not detected")
 	CustomerLightPersonalData     bool // this product typically contains "non-sensitive" customer information (such as names, email)
 	CustomerSensitivePersonalData bool // this product typically contains "sensitive" customer information (such as financial data, religion,...)
 	EmployeeLightPersonalData     bool // this product typically contains "non-sensitive" customer information (such as names, email)
