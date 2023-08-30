@@ -4,9 +4,7 @@ import (
 	"fmt"
 	"encoding/json"
 	"io"
-	"log"
 	"net/http"
-	"os"
 	"time"
 	"bytes"
 )
