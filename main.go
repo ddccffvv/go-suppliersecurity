@@ -19,16 +19,16 @@ type Product struct {
 	PrivacyPages                  []string `json:"privacy_pages"`
 	SecurityPages                 []string `json:"security_pages"`
 	ProductPage                   string
-	HipaaCertified                bool
-	Iso27001Certified             bool
-	Soc2Type1Certified            bool
-	Soc2Type2Certified            bool
-	CustomerLightPersonalData     bool
-	CustomerSensitivePersonalData bool
-	EmployeeLightPersonalData     bool
-	EmployeeSensitivePersonalData bool
-	CorporateSensitiveInformation bool
-	LastChecked                   string
+  HipaaCertified                bool `json:"hipaa_certified"`
+  Iso27001Certified             bool `json:"iso27001_certified"`
+  Soc2Type1Certified            bool `json:"soc2_type1_certified"`
+  Soc2Type2Certified            bool `json:"soc2_type2_certified"`
+  CustomerLightPersonalData     bool `json:"customer_light_personal_data"`
+  CustomerSensitivePersonalData bool `json:"customer_sensitive_personal_data"`
+  EmployeeLightPersonalData     bool `json:"employee_light_personal_data"`  
+  EmployeeSensitivePersonalData bool `json:"employee_sensitive_personal_data"`
+  CorporateSensitiveInformation bool `json:"corporate_sensitive_information"`
+  LastChecked                   string `json:"last_checked"`
 }
 
 type Productlist struct {
