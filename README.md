@@ -40,7 +40,7 @@ There are 2 methods available:
 
 `RetrieveProduct(api_key string, product_id string) (Product, error)` can be used when the product id is known. You'll receive a single `Product`.
 
-`Search(api_key string, search_term string) (Productlist, error)` is used to retrieve one or more products using (part of) the URL as search term. You'll receive a `Productlist`.
+`Search(api_key string, search_term string) (Productlist, error)` is used to retrieve one or more products using (part of) the URL as search term. You'll receive a `Productlist`, which contains multiple `Product`s.
 
 These are the available fields:
 
